@@ -28,9 +28,9 @@ class Store:
         output = f"Welcome to {self.name}!"
         i = 1
         for category in self.categories:
-            output += f'\n {i} {str(category)}'
+            output += f'\n {i}. {str(category)}'
             i += 1
-        return f"Welcome to {self.name}! Here are the categories: {self.categories}"
+        # return f"Welcome to {self.name}! Here are the categories: {self.categories}"
 
     def __repr__(self):
        # also returns a string.
@@ -44,8 +44,8 @@ hiking_category = Category("Hiking", "Outdoor/Mountains only", [])
 
 
 
-sports_store = Store("Gander Mountain", ["Running", "Biking", "Fishing", "Hiking"]) 
-produce_store = Store("Kroger", ["Dairy", "Produce", "Deli", "Bakery" ]) #create an instance of existing code. 
+# sports_store = Store("Gander Mountain", ["Running", "Biking", "Fishing", "Hiking"]) 
+# produce_store = Store("Kroger", ["Dairy", "Produce", "Deli", "Bakery" ]) #create an instance of existing code. 
 
 #str(sports_store)
 #print(sports_store)
